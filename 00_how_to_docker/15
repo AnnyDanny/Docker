@@ -1,0 +1,6 @@
+docker run -d --name roach-warden -p 8081:80 --link spawning_pool:db phpmyadmin/phpmyadmin
+
+
+16. docker logs -f spawning-pool
+17. docker ps
+18. docker restart overlord  

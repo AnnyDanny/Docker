@@ -1,0 +1,18 @@
+1. создать символическую ссылку на витруал бокс, который нужно перенести на комьютер , а работать можнно со своего репозитория;
+2. запускать докер машин
+- docker-machine --help 
+- docker-machine ssh Char  - это работать сразу в своей вм чар
+- docker ps  - смотреть запущенные процессы
+- docker-machine env Char  и   eval $(docker-machine env Char) помогает рабоат в чаре
+- docker-machine create -d virtualbox Char - создание чара
+- docker-machine rm -f Char - удаление чара, если нужно будет новый создавать
+- для очистки:
+	~/Library - enter, потом rm -rf *42_cache* и удалить все с корзины 
+
+
+
+2.
+чтобы запустить: root@82989d0698e3:/# 
+- docker run -it ubuntu bash
+
+3. docker ps -l to get the ID or name of the running container.

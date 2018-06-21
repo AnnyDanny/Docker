@@ -1,0 +1,22 @@
+1. docker run --name=spawning-pool-mysql mysql 
+
+Pulling from library/mysql
+f2aa67a397c4: Already exists 
+1accf44cb7e0: Pull complete 
+2d830ea9fa68: Pull complete 
+740584693b89: Pull complete 
+4d620357ec48: Pull complete 
+ac3b7158d73d: Pull complete 
+a48d784ee503: Pull complete 
+f122eadb2640: Pull complete 
+3df40c552a96: Pull complete 
+da7d77a8ed28: Pull complete 
+f03c5af3b206: Pull complete 
+54dd1949fa0f: Pull complete 
+Digest: sha256:d60c13a2bfdbbeb9cf1c84fd3cb0a1577b2bbaeec11e44bf345f4da90586e9e1
+Status: Downloaded newer image for mysql:latest
+error: database is uninitialized and password option is not specified 
+  You need to specify one of MYSQL_ROOT_PASSWORD, MYSQL_ALLOW_EMPTY_PASSWORD and MYSQL_RANDOM_ROOT_PASSWORD
+
+  2. docker run -d --restart on-failure -v hatchery:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings --name spawning-pool mysql
+04aebbc9d5a6e5ef4446eb9ff4bf993b6b2a4749284f315b291ef92e7c324d1f

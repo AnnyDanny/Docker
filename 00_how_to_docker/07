@@ -1,0 +1,9 @@
+>> docker inspect overlord | grep '"IPAddress"' | head -n 1 
+
+output:
+"IPAddress": "172.17.0.2"
+
+OR
+
+>>  docker inspect -f "{{ .NetworkSettings.IPAddress }}" overlord  
+172.17.0.2
